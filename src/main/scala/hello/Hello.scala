@@ -27,5 +27,14 @@ object Hello {
         val celsius: Double = 5 / 9.0 * (fahrenheit - 32)
 
     println("Celsius temp is " + celsius)
+
+    // imports "conventionally" all get grouped at the top of the file
+    // scala allows imports "anywhere" and they are scoped
+    import scala.io.StdIn
+//    import scala.io._ // import everything in scala.io
+//    import scala.io.{StdIn, Source}
+    val aNum = StdIn.readLine("Please enter a number")
+    println("Number is " + aNum)
+
   }
 }
