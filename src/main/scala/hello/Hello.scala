@@ -18,5 +18,14 @@ object Hello {
     // calculate a celcius temperature, and print it out
 
     // c = 5/9 of (f - 32)
+
+    val fahrenheit: Double = 68
+
+    // 5 / 9 is ZERO !!! change order, or go to floating point representation
+    //    val celsius = 5 * (fahrenheit - 32)  / 9
+    //    val celsius: Double = (fahrenheit - 32) * 5 / 9
+        val celsius: Double = 5 / 9.0 * (fahrenheit - 32)
+
+    println("Celsius temp is " + celsius)
   }
 }
