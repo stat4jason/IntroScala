@@ -26,6 +26,11 @@ object ImplicitArguments {
       implicit val defMsg = "Guten Tag"
       showMessage
       showMessage
+
+      val names = List("Fred", "Jim", "Sheila")
+      import useimplicits.StringOrdering.byLength2
+      println(names.sorted)
+      println(names.sorted((a:String, b:String) => b.charAt(0) - a.charAt(0)))
     }
   }
 }
