@@ -24,6 +24,7 @@ object TryACase {
       case Person(x, y) /*if y != "Jones"*/ => (x, false)
       case _ => (Unit, false)
     }
+
     println(s"Firstname extracted is ${fn}, is a Jones? ${isAJones}")
 
 //    val (a, b) = if (target.isInstanceOf[Person]) {
@@ -32,5 +33,16 @@ object TryACase {
 //        return (p.firstName, true)
 //      }
 //    }
+
+    case class Number(v: Int)
+    case class Text(s: String)
+
+    val v: Any = Person("Fred", "Smith")
+
+    v match {
+      case Number(x) => println("It's a number containing " + x)
+      case Text(t) => println("It's text containing " + t)
+      case _ => println("Something else entirely")
+    }
   }
 }
