@@ -41,7 +41,7 @@ object Solutions {
 
     var fahr = -40
     while (fahr <= 220) {
-      println(s"${fahr} fahrenheit is ${fahrToCelc(fahr)} celsius")
+      println(f"${fahr}%5.2f fahrenheit is ${fahrToCelc(fahr)}%5.2f celsius")
       fahr += 10
     }
 

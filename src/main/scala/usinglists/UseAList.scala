@@ -17,5 +17,17 @@ object UseAList {
 
     val l4 = "Ten" :: "Eleven" :: Nil
     println(l4)
+
+//    val l5 = l.++(l4)
+//    val l5 = l ++ (l4) // "infix" variation, with parens, works with multiple arguments
+    val l5 = l ++ l4 // "infix" variation, with single arg, no need for parens
+    println(l5)
+
+    val l6 = l ::: l4
+    println(l6)
+
+    Console.println("Hello")
+    Console println "Hello"
+    val sum = (2).+(3)
   }
 }
